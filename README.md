@@ -1,5 +1,7 @@
 # Talk2Me
 
+This is a companion front end app for the VacationPlanner app which demonstrates how to interact with LLMs using optimized RAG techniques.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
 ## Development server
