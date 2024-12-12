@@ -1,0 +1,13 @@
+<div class="container">
+  <textarea [(ngModel)]="textInput" rows="5" placeholder="Enter your query here"></textarea>
+  <br/>
+  <input [(ngModel)]="topK" size="90" placeholder="Enter metadata of how many functions from your library should be sent to the LLM. Defaults to 5"/>
+  <br/><br/><br/><br/>
+  <button (click)="submitText()">Submit</button>
+  <div *ngIf="response">
+    <h4>Response:</h4>
+
+    <textArea rows="50" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+    >{{ response }}</textArea>
+  </div>
+</div>
